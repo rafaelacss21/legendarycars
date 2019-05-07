@@ -1,0 +1,22 @@
+/*
+c44f2f-565554-f4a698-f6f5ae-0d090a 
+$color1: rgba(235, 94, 85, 1);
+$color2: rgba(86, 85, 84, 1);
+$color3: rgba(244, 166, 152, 1);
+$color4: rgba(246, 245, 174, 1);
+$color5: rgba(13, 9, 10, 1); 
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+:root {
+  --primaryColor: #c44f2f;
+  --mainWhite: #f4f1de;
+  --mainBlack: #0d090a;
+  --mainGrey: #565554;
+  --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
