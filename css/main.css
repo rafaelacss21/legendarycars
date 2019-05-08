@@ -238,7 +238,7 @@ body {
 }
 
 /* CUSTOMER QUOSTES */
-.customer {
+/* .customer {
   background: var(--mainWhite);
 }
 .customer-img {
@@ -261,6 +261,114 @@ body {
 }
 .quote-icon {
   font-size: 3rem;
+} */
+.customer {
+  background-image: url(../img/customer1.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 180px 0;
+  position: relative;
+}
+.customer:before {
+  position: absolute;
+  content: "";
+  background: var(--mainWhite);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.single-quote {
+  color: var(--mainWhite);
+  padding-left: 75px;
+  position: relative;
+  margin: 0 15px 15px;
+}
+.single-quote:hover .quote-text {
+  background: #ccaf47;
+  transition: 1s;
+}
+.quote-img {
+  border-radius: 50%;
+  height: 150px;
+  left: 0;
+  margin-top: -75px;
+  position: absolute;
+  top: 50%;
+  width: 150px;
+}
+.quote-img > img {
+  background: linear-gradient(to bottom, #1e78b1, #abd4ee);
+  border-radius: 50%;
+  padding: 5px;
+}
+.quote-text {
+  background: var(--mainYellow);
+  padding: 40px 20px 40px 100px;
+  color: var(--mainGrey);
+}
+.quote-text h4 {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.quote-text h4 span {
+  font-size: 1rem;
+  display: block;
+  font-style: italic;
+}
+/* nav arrows */
+.customer div.owl-nav {
+  color: var(--mainYellow);
+  display: inline-block;
+  font-size: 40px;
+  height: 60px;
+  margin-top: -30px;
+  text-align: center;
+  width: 40px;
+  transition: 0.3s;
+}
+.owl-prev,
+.owl-next {
+  position: absolute;
+}
+.owl-prev {
+  left: -20px;
+  top: 100px;
+}
+.owl-next {
+  right: -15px;
+  top: 100px;
+}
+/* responsive version */
+@media only screen and (max-width: 767px) {
+  .customer {
+    padding: 15px 0;
+  }
+  .single-quote {
+    padding-left: 0;
+    padding-top: 75px;
+  }
+  .quote-img {
+    left: 50%;
+    margin-left: -75px;
+    top: 75px;
+  }
+  .quote-text {
+    padding: 80px 25px 25px;
+  }
+  .quote-text h4 {
+    margin-bottom: 20px;
+  }
+  .owl-prev {
+    left: -5px;
+    top: 150px;
+  }
+  .owl-next {
+    right: -5px;
+    top: 150px;
+  }
 }
 
 /* CONTACT US */
