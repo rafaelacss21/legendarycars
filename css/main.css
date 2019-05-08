@@ -349,6 +349,7 @@ body {
   .single-quote {
     padding-left: 0;
     padding-top: 75px;
+    margin: 0 25px 0 25px;
   }
   .quote-img {
     left: 50%;
@@ -362,11 +363,11 @@ body {
     margin-bottom: 20px;
   }
   .owl-prev {
-    left: -5px;
+    left: 1px;
     top: 150px;
   }
   .owl-next {
-    right: -5px;
+    right: 1px;
     top: 150px;
   }
 }
