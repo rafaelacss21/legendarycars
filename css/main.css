@@ -15,6 +15,7 @@ body {
   color: var(--mainBlack);
   background: var(--mainWhite);
 }
+
 /* Section Title */
 .section-title-special {
   background: var(--primaryColor);
@@ -70,6 +71,7 @@ body {
 .nav-icon:hover {
   color: var(--mainYellow);
 }
+
 /* HEADER */
 .header {
   color: var(--mainWhite);
@@ -149,7 +151,6 @@ body {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-
 .car-value {
   background: var(--primaryColor);
   color: var(--mainWhite);
@@ -234,4 +235,70 @@ body {
 }
 .img-container:hover .featured-link {
   opacity: 1;
+}
+
+/* CUSTOMER QUOSTES */
+.customer {
+  background: var(--mainWhite);
+}
+.customer-img {
+  border: 0.4rem solid var(--mainWhite);
+}
+.customer-name {
+  color: var(--primaryColor);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.customer-job {
+  font-size: 0.9rem;
+}
+.customer-icon {
+  font-size: 2rem;
+  color: var(--mainGrey);
+}
+.quote-text {
+  font-size: 0.9rm;
+}
+.quote-icon {
+  font-size: 3rem;
+}
+
+/* CONTACT US */
+.contact {
+  padding: 40px;
+  background: url(../img/contact.jpg) center/cover fixed no-repeat;
+  color: var(--mainWhite);
+}
+.contact .form-control {
+  border-radius: 0 !important;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+.contact button {
+  background-color: var(--mainYellow);
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--mainWhite);
+}
+.contact button:hover {
+  background-color: var(--primaryColor);
+}
+.text-under-title {
+  color: var(--mainGrey);
+}
+
+/* FOOTER */
+.footer {
+  background: var(--mainBlack);
+}
+.footer-icon {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--mainYellow);
+}
+.footer-icon:hover {
+  color: var(--primaryColor);
+}
+.copyright {
+  color: var(--lightBlue);
 }
