@@ -36,7 +36,7 @@ const CreateCars = (() => {
       model,
       price,
       type,
-      transm,
+      trans,
       horsep,
       gas
     ) {
@@ -47,7 +47,7 @@ const CreateCars = (() => {
       this.model = model;
       this.price = price;
       this.type = type;
-      this.transm = transm;
+      this.trans = trans;
       this.horsep = horsep;
       this.gas = gas;
     }
@@ -95,7 +95,7 @@ const CreateCars = (() => {
     makeCar(
       "ford",
       "american",
-      "https://raw.githubusercontent.com/rafaelacss21/legendarycars/master/img/american1.jpg",
+      "https://rafaelacss21.github.io/legendarycars/img/american1.jpg",
       false,
       "Explorer 2020",
       "38,000",
@@ -117,7 +117,7 @@ const CreateCars = (() => {
     makeCar(
       "chevrolet",
       "american",
-      "https://raw.githubusercontent.com/rafaelacss21/legendarycars/master/img/american2.jpg",
+      "https://rafaelacss21.github.io/legendarycars/img/american2.jpg",
       false,
       "SILVERADO 1500 LT",
       "35,000",
@@ -219,7 +219,9 @@ const DisplayCars = (CreateCars => {
     cars.forEach(car => {
       output += `
       <!-- single car -->
-        <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
+        <div class="col-10 mx-auto my-3 col-md-6 col-lg-4 single-car ${
+          car.country
+        }">
           <div class="card car-card">
             <img src=${car.img} class="card-img-top car-img" alt="" />
             <div class="card-body">
@@ -283,3 +285,25 @@ const DisplaySpecialCars = (CreateCars => {
     }
   });
 })(CreateCars);
+
+const FilterCars = (() => {
+  const filter = document.querySelectorAll(".filter-btn");
+
+  filter.forEach(btn => {
+    btn.addEventListener("click", event => {
+      const value = event.target.dataset.filter;
+      // console.log(value);
+      const singleCar = document.querySelectorAll(".single-car");
+      // console.log(singleCar);
+      singleCar.forEach(car => {
+        if (value === "all") {
+          car.style.display = "block";
+        } else {
+          !car.classList.contains(value)
+            ? (car.style.display = "none")
+            : (car.style.display = "block");
+        }
+      });
+    });
+  });
+})();
