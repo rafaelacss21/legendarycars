@@ -40,36 +40,36 @@ body {
 
 /* NAVBAR */
 .navbar {
-  background: var(--mainWhite);
+  background: var(--primaryColor);
 }
 .navbar-icon {
   font-size: 2rem;
-  color: var(--primaryColor);
+  color: var(--mainWhite);
 }
 .navbar-toggler {
   outline-color: var(--mainYellow) !important;
 }
 .nav-link {
-  color: var(--mainBlack);
+  color: var(--mainWhite);
   font-weight: 600;
   text-transform: capitalize;
   transition-property: color;
-  transition-duration: 1s;
+  transition-duration: 0.9s;
   transition-timing-function: linear;
 }
 .nav-link:hover {
-  color: var(--primaryColor);
+  color: var(--lightBlue);
 }
 .nav-icon {
   font-size: 1.5rem;
-  color: var(--primaryColor);
+  color: var(--mainYellow);
   text-decoration: none !important;
   transition-property: color;
-  transition-duration: 1s;
+  transition-duration: 0.9s;
   transition-timing-function: linear;
 }
 .nav-icon:hover {
-  color: var(--mainYellow);
+  color: var(--mainWhite);
 }
 
 /* HEADER */
@@ -194,6 +194,7 @@ body {
   opacity: 0.5;
   cursor: pointer;
   transition: all 1s ease-in-out;
+  cursor: default !important;
 }
 .featured-item:hover {
   opacity: 1;
@@ -238,41 +239,17 @@ body {
 }
 
 /* CUSTOMER QUOSTES */
-/* .customer {
-  background: var(--mainWhite);
-}
-.customer-img {
-  border: 0.4rem solid var(--mainWhite);
-}
-.customer-name {
-  color: var(--primaryColor);
-  font-weight: bold;
-  font-size: 1.3rem;
-}
-.customer-job {
-  font-size: 0.9rem;
-}
-.customer-icon {
-  font-size: 2rem;
-  color: var(--mainGrey);
-}
-.quote-text {
-  font-size: 0.9rm;
-}
-.quote-icon {
-  font-size: 3rem;
-} */
 .customer {
-  background-image: url(../img/customer1.jpg);
+  /* background-image: url(../img/customer1.jpg);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   padding: 180px 0;
-  position: relative;
+  position: relative; */
 }
 .customer:before {
-  position: absolute;
+  /* position: absolute; */
   content: "";
   background: var(--mainWhite);
   width: 100%;
@@ -288,7 +265,7 @@ body {
 }
 .single-quote:hover .quote-text {
   background: #ccaf47;
-  transition: 1s;
+  transition: all 1s ease-in-out;
 }
 .quote-img {
   border-radius: 50%;
@@ -308,6 +285,7 @@ body {
   background: var(--mainYellow);
   padding: 40px 20px 40px 100px;
   color: var(--mainGrey);
+  border-radius: 5px;
 }
 .quote-text h4 {
   font-size: 1.3rem;
@@ -349,7 +327,7 @@ body {
   .single-quote {
     padding-left: 0;
     padding-top: 75px;
-    margin: 0 25px 0 25px;
+    margin: 0 30px 0 30px;
   }
   .quote-img {
     left: 50%;
@@ -363,11 +341,11 @@ body {
     margin-bottom: 20px;
   }
   .owl-prev {
-    left: 1px;
+    left: 10px;
     top: 150px;
   }
   .owl-next {
-    right: 1px;
+    right: 10px;
     top: 150px;
   }
 }
