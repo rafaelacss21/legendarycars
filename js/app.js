@@ -84,7 +84,7 @@ const CreateCars = (() => {
     makeCar(
       "audi",
       "german",
-      "../img/question.jpg",
+      "https://rafaelacss21.github.io/legendarycars/img/german1.jpg",
       undefined,
       "R8 V20 Decade",
       210650,
@@ -95,7 +95,7 @@ const CreateCars = (() => {
     makeCar(
       "ford",
       "american",
-      "../img/american1.jpg",
+      "https://rafaelacss21.github.io/legendarycars/img/american1.jpg",
       false,
       "Explorer 2020",
       38000,
@@ -106,7 +106,7 @@ const CreateCars = (() => {
     makeCar(
       "BMW",
       "german",
-      "../img/german2.jpg",
+      "https://rafaelacss21.github.io/legendarycars/img/german2.jpg",
       undefined,
       "M850I",
       131400,
@@ -117,7 +117,7 @@ const CreateCars = (() => {
     makeCar(
       "chevrolet",
       "american",
-      "../img/american2.jpg",
+      "https://rafaelacss21.github.io/legendarycars/img/american2.jpg",
       false,
       "SILVERADO 1500 LT",
       35000,
