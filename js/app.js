@@ -84,7 +84,7 @@ const CreateCars = (() => {
     makeCar(
       "audi",
       "german",
-      "../img/german1.jpg",
+      "../img/question.jpg",
       undefined,
       "R8 V20 Decade",
       210650,
