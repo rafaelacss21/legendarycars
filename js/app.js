@@ -87,7 +87,7 @@ const CreateCars = (() => {
       "https://rafaelacss21.github.io/legendarycars/img/german1.jpg",
       undefined,
       "R8 V20 Decade",
-      210650,
+      "210,650",
       "coupe",
       undefined,
       562
@@ -95,10 +95,10 @@ const CreateCars = (() => {
     makeCar(
       "ford",
       "american",
-      "https://rafaelacss21.github.io/legendarycars/img/american1.jpg",
+      "https://raw.githubusercontent.com/rafaelacss21/legendarycars/master/img/american1.jpg",
       false,
       "Explorer 2020",
-      38000,
+      "38,000",
       "SUV",
       undefined,
       365
@@ -109,7 +109,7 @@ const CreateCars = (() => {
       "https://rafaelacss21.github.io/legendarycars/img/german2.jpg",
       undefined,
       "M850I",
-      131400,
+      "131,400",
       "coupe",
       undefined,
       530
@@ -117,10 +117,10 @@ const CreateCars = (() => {
     makeCar(
       "chevrolet",
       "american",
-      "https://rafaelacss21.github.io/legendarycars/img/american2.jpg",
+      "https://raw.githubusercontent.com/rafaelacss21/legendarycars/master/img/american2.jpg",
       false,
       "SILVERADO 1500 LT",
-      35000,
+      "35,000",
       "truck",
       undefined,
       355
@@ -131,7 +131,7 @@ const CreateCars = (() => {
       "https://rafaelacss21.github.io/legendarycars/img/german3.jpg",
       undefined,
       "E400",
-      72800,
+      "72,800",
       "coupe",
       undefined,
       328
@@ -142,7 +142,7 @@ const CreateCars = (() => {
       "https://rafaelacss21.github.io/legendarycars/img/american3.jpg",
       false,
       "1500 limited",
-      61045,
+      "61,045",
       "truck",
       undefined,
       395
@@ -153,7 +153,7 @@ const CreateCars = (() => {
       "https://rafaelacss21.github.io/legendarycars/img/german4.jpg",
       false,
       "Touareg",
-      51630,
+      "51,630",
       "SUV",
       undefined,
       415
@@ -164,7 +164,7 @@ const CreateCars = (() => {
       "https://rafaelacss21.github.io/legendarycars/img/american4.jpg",
       false,
       "300",
-      42700,
+      "42,700",
       "sedan",
       undefined,
       363
@@ -175,7 +175,7 @@ const CreateCars = (() => {
       "https://rafaelacss21.github.io/legendarycars/img/german5.jpg",
       undefined,
       "911 GT3",
-      176000,
+      "176,000",
       "coupe",
       undefined,
       475
@@ -186,7 +186,7 @@ const CreateCars = (() => {
       "https://rafaelacss21.github.io/legendarycars/img/american5.jpg",
       undefined,
       "Compass",
-      44000,
+      "44,000",
       "SUV",
       undefined,
       180
@@ -204,6 +204,48 @@ const CreateCars = (() => {
     specialCars
   };
 })();
+
+const DisplayCars = (CreateCars => {
+  const cars = CreateCars.cars;
+  // console.log(cars);
+
+  const inventory = document.querySelector(".inventory-container");
+
+  document.addEventListener("DOMContentLoaded", () => {
+    inventory.innerHTML = "";
+
+    let output = "";
+
+    cars.forEach(car => {
+      output += `
+      <!-- single car -->
+        <div class="col-10 mx-auto my-3 col-md-6 col-lg-4">
+          <div class="card car-card">
+            <img src=${car.img} class="card-img-top car-img" alt="" />
+            <div class="card-body">
+              <div class="car-info d-flex justify-content-between">
+                <div class="car-text text-uppercase">
+                  <h6 class="font-weight-bold">${car.make}</h6>
+                  <h6>${car.model}</h6>
+                </div>
+                <h5 class="car-value align-self-center py-2 px-3">
+                  C$ <span class="car-price">${car.price}</span></h5>
+              </div>
+            </div>
+            <div class="card-footer text-capitalize d-flex justify-content-between">
+              <p><span><i class="fas fa-car"></i></span>${car.type}</p>
+                <p><span><i class="fas fa-cogs"></i></span>${car.trans}</p>
+                <p><span><i class="fas fa-horse-head"></i></span>${
+                  car.horsep
+                }</p>
+                <p><span><i class="fas fa-gas-pump"></i></span>${car.gas}</p>
+            </div>
+          </div>
+        </div>`;
+    });
+    inventory.innerHTML = output;
+  });
+})(CreateCars);
 
 const DisplaySpecialCars = (CreateCars => {
   const specialCars = CreateCars.specialCars;
@@ -229,7 +271,7 @@ const DisplaySpecialCars = (CreateCars => {
     info.innerHTML = data;
   });
 
-  //change img
+  //change img when you click the car icon
   info.addEventListener("click", event => {
     // console.log(event.target);
     //make sure only display picture if you click in the car icon
