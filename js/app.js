@@ -128,7 +128,7 @@ const CreateCars = (() => {
     makeCar(
       "Mercedes-Benz",
       "german",
-      "../img/german3.jpg",
+      "https://rafaelacss21.github.io/legendarycars/img/german3.jpg",
       undefined,
       "E400",
       72800,
@@ -139,7 +139,7 @@ const CreateCars = (() => {
     makeCar(
       "RAM",
       "american",
-      "../img/american3.jpg",
+      "https://rafaelacss21.github.io/legendarycars/img/american3.jpg",
       false,
       "1500 limited",
       61045,
@@ -150,7 +150,7 @@ const CreateCars = (() => {
     makeCar(
       "Volkwagen",
       "german",
-      "../img/german4.jpg",
+      "https://rafaelacss21.github.io/legendarycars/img/german4.jpg",
       false,
       "Touareg",
       51630,
@@ -161,7 +161,7 @@ const CreateCars = (() => {
     makeCar(
       "Chrysler",
       "american",
-      "../img/american4.jpg",
+      "https://rafaelacss21.github.io/legendarycars/img/american4.jpg",
       false,
       "300",
       42700,
@@ -172,7 +172,7 @@ const CreateCars = (() => {
     makeCar(
       "Porsche",
       "german",
-      "../img/german5.jpg",
+      "https://rafaelacss21.github.io/legendarycars/img/german5.jpg",
       undefined,
       "911 GT3",
       176000,
@@ -183,7 +183,7 @@ const CreateCars = (() => {
     makeCar(
       "Jeep",
       "american",
-      "../img/american5.jpg",
+      "https://rafaelacss21.github.io/legendarycars/img/american5.jpg",
       undefined,
       "Compass",
       44000,
